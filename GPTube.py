@@ -10,19 +10,13 @@ def download_video(url, save_path, file_format):
         print("Author:", yt.author)
         print("Duration:", yt.length, "seconds")
 
+        # Remove special characters and replace them with underscores
         cleaned_title = re.sub('[^0-9a-zA-Z]+', '_', yt.title)
 
         if file_format == "mp4":
             stream = yt.streams.get_highest_resolution()
-            temp_video_path = os.path.join(save_path, "temp_" + cleaned_title + ".mp4")
             print("Downloading video...")
-            stream.download(save_path, filename="temp_" + cleaned_title)
-
-            print("Compressing video...")
-            video = VideoFileClip(temp_video_path)
-            video.write_videofile(os.path.join(save_path, cleaned_title + ".mp4"), bitrate="500k")
-
-            os.remove(temp_video_path)
+            stream.download(save_path, filename=cleaned_title + ".mp4")
         elif file_format == "mp3":
             stream = yt.streams.get_audio_only()
             print("Downloading audio...")
