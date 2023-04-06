@@ -1,5 +1,3 @@
-  YouTube Video Downloader body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; } h1, h2, h3, h4 { font-weight: bold; } code { background-color: #f4f4f4; padding: 2px 5px; border-radius: 3px; } pre { background-color: #f4f4f4; padding: 10px; border-radius: 3px; }
-
 YouTube Video Downloader
 ========================
 
