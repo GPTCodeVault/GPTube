@@ -21,11 +21,11 @@ Installation
 
 1.  Clone the repository:
 
-    git clone https://github.com/yourusername/youtube-video-downloader.git
+    git clone https://github.com/GPTCodeVault/GPTube.git
 
 3.  Change the working directory:
 
-    cd youtube-video-downloader
+    cd GPTube
 
 5.  Install the required dependencies:
 
@@ -36,7 +36,7 @@ Usage
 
 1.  Run the script:
 
-    python downloader.py
+    py GPTube.py
 
 3.  Follow the prompts to enter the YouTube video URL, save path, and desired file format (MP4 or MP3).
 
