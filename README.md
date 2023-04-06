@@ -1,7 +1,7 @@
 YouTube Video Downloader
 ========================
 
-This is a simple Python script that allows you to download YouTube videos as MP4 or MP3 files. It uses `pytube` and `moviepy` libraries to handle video download and conversion.
+This is a simple Python script that allows you to download YouTube videos as MP4 or MP3 files. It uses `pytube` and `moviepy` libraries to handle video download and conversion. Due to the limitations of PyTube, the downloaded video quality is subpar.
 
 Features
 --------
